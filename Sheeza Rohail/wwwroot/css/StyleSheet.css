@@ -1,0 +1,21 @@
+﻿body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 1px;
+}
+
+.button:hover {
+        background-color: hotpink;
+        color: white;
+    }
+
+img {
+    float:right;
+}
