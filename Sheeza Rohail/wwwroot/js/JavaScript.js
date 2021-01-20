@@ -1,4 +1,6 @@
-﻿function grade() {
+﻿//Creating a function
+function grade() {
+    //declaring variables and obtaining values using DOM
     var assignment = document.getElementById("assignment").value / 100;
     var group = document.getElementById("group").value / 100;
     var quiz = document.getElementById("quiz").value / 100;
@@ -6,6 +8,7 @@
     var intex = document.getElementById("intex").value / 100;
     var Grade = '';
 
+    //Calculating the weights 
     assignment = assignment * (2000 * .5);
     group = group * (2000 * .1);
     quiz = quiz * (2000 * .1);
@@ -18,6 +21,7 @@
     total = assignment + group + quiz + exam + intex;
     pct = (total / 2000) * 100;
 
+    //If statements to determine grades and percentages
     if (pct >= 94) {
         Grade = 'A';
     }
@@ -55,5 +59,6 @@
         Grade = 'E';
     }
 
+    //alert to display grades and percentages
    alert('Your grade is ' + Grade + ' and your percentage is ' + pct);
  }
