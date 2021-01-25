@@ -10,6 +10,8 @@ namespace Sheeza_Rohail.Models
     {
         [Required]
 
+        //setting a validation range for the inputs
+
         [Range(0, 100)]
         public int assignment { get; set; }
         

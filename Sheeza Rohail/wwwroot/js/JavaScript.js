@@ -1,6 +1,6 @@
 ﻿//Creating a function
 function grade() {
-    //declaring variables and obtaining values using DOM
+    //declaring variables and obtaining values using Jquery
     var assignment = $("#assignment").val()/ 100;
     var group = $("#group").val()/ 100;
     var quiz = $("#quiz").val()/ 100;

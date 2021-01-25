@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.title</title>
+    <!--Linking css style page-->
     <link href="~/css/StyleSheet.css" rel="stylesheet" />
 </head>
  <body>
@@ -10,6 +11,7 @@
          <h2 style="color:hotpink">@ViewBag.h2</h2>
          <menu>
              <ul>
+                 <!--Links for navigating the page-->
                  <li><a asp-controller="Home" asp-action="Index">Page1</a></li>
                  <li><a asp-controller="Home" asp-action="Index2">Page2</a></li>
              </ul>
@@ -17,7 +19,7 @@
      </header>
     @RenderBody()
      <footer>
-         Learn until you can teach!
+         This is the footer
      </footer>
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/js/JavaScript.js"></script>
