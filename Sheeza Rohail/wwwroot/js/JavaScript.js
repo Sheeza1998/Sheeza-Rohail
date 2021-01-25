@@ -1,11 +1,11 @@
 ﻿//Creating a function
 function grade() {
     //declaring variables and obtaining values using DOM
-    var assignment = document.getElementById("assignment").value / 100;
-    var group = document.getElementById("group").value / 100;
-    var quiz = document.getElementById("quiz").value / 100;
-    var exam = document.getElementById("exam").value / 100;
-    var intex = document.getElementById("intex").value / 100;
+    var assignment = $("#assignment").val()/ 100;
+    var group = $("#group").val()/ 100;
+    var quiz = $("#quiz").val()/ 100;
+    var exam = $("#exam").val()/ 100;
+    var intex = $("#intex").val()/ 100;
     var Grade = '';
 
     //Calculating the weights 
@@ -60,5 +60,5 @@ function grade() {
     }
 
     //alert to display grades and percentages
-   alert('Your grade is ' + Grade + ' and your percentage is ' + pct);
+   alert('Your grade is ' + Grade + ' and your percentage is ' + pct + " %");
  }
